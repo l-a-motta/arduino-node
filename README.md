@@ -1,5 +1,4 @@
-# arduino-node
-Controlando um Arduino UNO com a framework Node.js
+
  
 Hardware:
     - Arduino UNO
@@ -14,26 +13,25 @@ Software:
 Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep 
 
 
-# Read Me Template
+# arduino-node
 
-![Project Image](project-image-url)
+![Project Image](https://www.tinkercad.com/things/dnzbB5Gwoep)
 
-> This is a ReadMe template to help save you time and effort.
+> Controlando um Arduino UNO com a framework Node.js
 
 ---
 
-### Table of Contents
-You're sections headers will be used to reference location of destination.
+### Sumário
 
-- [Description](#description)
+- [Componentes](#componentes)
 - [How To Use](#how-to-use)
 - [References](#references)
 - [License](#license)
-- [Author Info](#author-info)
+- [Autores](#author-info)
 
 ---
 
-## Description
+## Componentes
 
 Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
 
@@ -94,7 +92,7 @@ SOFTWARE.
 
 ---
 
-## Author Info
+## Autores
 
 - Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
 - Website - [James Q Quick](https://jamesqquick.com)
