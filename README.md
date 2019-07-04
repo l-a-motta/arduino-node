@@ -17,6 +17,8 @@
 
 ## Componentes
 
+#### Peças
+
 - Arduino UNO
 - LED/ Sensor de temperatura/ Sensor de fotoluminosidade/ etc
 - Resistores necessários para seus módulos
@@ -34,9 +36,9 @@
 
 ## Como usar
 
-#### Instalação
+### Instalação
 
-### Links úteis
+#### Links úteis
 
 Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep 
 
@@ -60,6 +62,17 @@ Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep
                 }
         </script>
 ```
+
+#### Código NODE
+```javascript
+ var express = require('express');
+ app = express();
+ server = require('http').createServer(app);
+ io = require('socket.io').listen(server);
+ var SerialPort = require("serialport")
+ var serialPort = new SerialPort("/COM3", { baudRate: 9600 });
+```
+
 [Voltar ao topo](#arduino-node)
 
 ---
@@ -71,7 +84,7 @@ Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep
 
 ## Autores
 
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
-
+- Diogo Castanho Emídio
+- Leonardo Antonetti da Motta
+- Jorge
 [Voltar ao topo](#arduino-node)
