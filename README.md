@@ -10,12 +10,10 @@ Software:
     - Firmata: É um protocolo para comunicação com diferentes microcontroladores a partir de software em um computador, smartphone, etc. O firmware Firmata pode ser carregado em qualquer placa microcontroladora (como Arduino) e é capaz de falar com qualquer laptop, PC ou smartphone. Já vem como padrão na Arduino IDE.
     - OPCIONAL Johnny-Five: Johnny-Five é a plataforma de robótica baseada em JavaScript e IoT usada para escrever códigos em JavaScript e usada para fazer uma ponte entre as placas do Arduino e o computador.
 
-Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep 
-
 
 # arduino-node
 
-![Project Image](https://www.tinkercad.com/things/dnzbB5Gwoep)
+![Imagem](https://circuitdigest.com/fullimage?i=circuitdiagram_mic/Circuit-Diagram-for-Controlling-an-LED-using-Nodejs-and-Arduino.png)
 
 > Controlando um Arduino UNO com a framework Node.js
 
@@ -27,7 +25,7 @@ Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep
 - [How To Use](#how-to-use)
 - [References](#references)
 - [License](#license)
-- [Autores](#author-info)
+- [Autores](#autores)
 
 ---
 
@@ -37,10 +35,12 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 #### Technologies
 
-- Technology 1
-- Technology 2
+- Arduino IDE
+- Node.js
+- Firmata
+- Johnny-five
 
-[Back To The Top](#read-me-template)
+[Voltar ao topo](#arduino-node)
 
 ---
 
@@ -48,19 +48,21 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 
 #### Installation
 
+### Links úteis
 
+Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep 
 
 #### API Reference
 
 ```html
     <p>dummy code</p>
 ```
-[Back To The Top](#read-me-template)
+[Voltar ao topo](#arduino-node)
 
 ---
 
 ## References
-[Back To The Top](#read-me-template)
+[Voltar ao topo](#arduino-node)
 
 ---
 
@@ -88,7 +90,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
+[Voltar ao topo](#arduino-node)
 
 ---
 
@@ -97,4 +99,4 @@ SOFTWARE.
 - Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
 - Website - [James Q Quick](https://jamesqquick.com)
 
-[Back To The Top](#read-me-template)
+[Voltar ao topo](#arduino-node)
