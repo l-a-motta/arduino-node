@@ -55,11 +55,19 @@ Antes de iniciar a codificação e o desenvolvimento, o Node.js deve ser baixado
  
 - Passo 6: Execute os comandos abaixo no CMD, um por um, para instalar essas três bibliotecas:
 
----html
+```html
 npm install express
 npm install socket.io
 npm install serialport
----
+```
+
+Agora, para executar o programa, siga as etapas abaixo:
+
+- Abrir o prompt de comando
+
+- Localize a pasta "LED_Control" seguindo o comando "cd"
+
+- Execute o comando "Node led_blink.js". Se executado com sucesso, mostrará "LED começou a piscar!"
 
 #### Links úteis
 
