@@ -35,7 +35,31 @@
 
 ### Instalação
 
-Texto aqui
+Antes de iniciar a codificação e o desenvolvimento, o Node.js deve ser baixado e configurado. Para fazer o download do ambiente Node.js, basta seguir etapas simples:
+
+- Passo 1: Faça o download do arquivo .exe do Node.js em seu site oficial.
+
+- Passo 2: Execute o .exe e siga as instruções dadas no instalador.
+
+- Passo 3: Reinicie seu computador como é recomendado no documento Node.js e também para usar todos os recursos do Node.js
+
+- Passo 4: Para verificar se o Node.js foi instalado, abra o Prompt de Comando e digite Node –v
+
+- Passo 5: Instale também as bibliotecas necessárias usadas para controlar o brilho do LED. Existem três bibliotecas usadas aqui:
+
+    - express: wrapper do servidor HTTP
+    
+    - socket.io: biblioteca de WebSockets
+    
+    - serialport: invólucro de porta serial
+ 
+- Passo 6: Execute os comandos abaixo no CMD, um por um, para instalar essas três bibliotecas:
+
+---html
+npm install express
+npm install socket.io
+npm install serialport
+---
 
 #### Links úteis
 
@@ -123,6 +147,13 @@ io.sockets.on('connection', function (socket) {
 ---
 
 ## Referências
+
+https://nodejs.org/dist/latest-v10.x/docs/api/
+
+https://www.youtube.com/watch?v=eVGEea7adDM
+
+https://github.com/simoesusp/Eletronica-para-Computacao
+
 [Voltar ao topo](#arduino-node)
 
 ---
@@ -132,4 +163,5 @@ io.sockets.on('connection', function (socket) {
 - Diogo Castanho Emídio
 - Leonardo Antonetti da Motta
 - Jorge
+
 [Voltar ao topo](#arduino-node)
