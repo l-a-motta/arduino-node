@@ -40,10 +40,25 @@
 
 Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep 
 
-#### API Reference
+#### Código Javascript na página HTML
 
 ```html
-    <p>dummy code</p>
+ <script type="text/javascript">
+                var socket = io.connect();
+               
+                socket.on('led', function (data) {
+                        document.getElementById("inputSlider").value = data.value;
+                        document.getElementById("outputText").innerHTML = data.value;
+                });
+
+                //aqui
+               
+                function showValue(newValue)
+                {
+                        document.getElementById("outputText").innerHTML=newValue;
+                        socket.emit('led', { value: newValue });
+                }
+        </script>
 ```
 [Voltar ao topo](#arduino-node)
 
