@@ -1,7 +1,4 @@
 # arduino-node
-
-![Imagem](https://circuitdigest.com/fullimage?i=circuitdiagram_mic/Circuit-Diagram-for-Controlling-an-LED-using-Nodejs-and-Arduino.png)
-
 > Controlando um Arduino UNO com a framework Node.js
 
 ---
@@ -38,6 +35,8 @@
 
 ### Instalação
 
+Texto aqui
+
 #### Links úteis
 
 Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep 
@@ -64,13 +63,59 @@ Link para o circuito usando LED: https://www.tinkercad.com/things/dnzbB5Gwoep
 ```
 
 #### Código NODE
+
+Inicializando as bibliotecas necessárias
+
 ```javascript
- var express = require('express');
- app = express();
- server = require('http').createServer(app);
- io = require('socket.io').listen(server);
- var SerialPort = require("serialport")
- var serialPort = new SerialPort("/COM3", { baudRate: 9600 });
+var express = require('express');
+app = express();
+server = require('http').createServer(app);
+io = require('socket.io').listen(server);
+var SerialPort = require("serialport")
+var serialPort = new SerialPort("/COM3", { baudRate: 9600 });
+```
+
+Fazendo as conexões
+
+```javascript
+server.listen(8080);// Coloque aqui o IP desejado para comunicação servidor/arduino/usuario
+
+app.use(express.static('public'));// Não tenho certeza se usar public pode causar um risco de segurança, a biblioteca express não tinha documentação boa sobre isso       
+ 
+var send = 0;// O valor inicial que será "mandado" para o arduino
+```
+
+Ouvindo o html para enviar dados no socket
+
+```javascript
+io.sockets.on('connection', function (socket) {
+        socket.on('led', function (data) {
+                send = data.value;
+
+                var buf = new Buffer.alloc(1);
+                buf.writeUInt8(send);
+                serialPort.write(buf);
+               
+                io.sockets.emit('led', {value: send});   
+        });
+       
+        socket.emit('led', {value: send});
+});
+```
+
+OPCIONAL: recebendo informações do socket para enviar para o html
+
+```javascript
+var read = 0;// O valor inicial do que será "recebido" do arduino
+io.sockets.on('connection', function (socket) {
+        socket.on('led', function (data) {
+                read = io.sockets.receive('led', {value: get});
+
+                var buf = new Buffer.alloc(1);
+                buf.writeUInt8(read);
+                console.log(buf);  
+        });
+});
 ```
 
 [Voltar ao topo](#arduino-node)
