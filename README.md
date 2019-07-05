@@ -170,6 +170,6 @@ https://github.com/simoesusp/Eletronica-para-Computacao
 
 - Diogo Castanho Emídio
 - Leonardo Antonetti da Motta
-- Jorge
+- Jorge Augusto Salgado Salhani
 
 [Voltar ao topo](#arduino-node)
